@@ -1,0 +1,48 @@
+version: '3'
+
+services:
+  dbos:
+    image: mysql:5.7
+    volumes:
+      - mysql_db:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: qwertyuiop
+      MYSQL_USER: himanshu
+      MYSQL_PASSWORD: qwertyuiop
+      MYSQL_DATABASE: mydatabase
+  
+  
+  wordpress_os:
+    image: wordpress:5.1.1-php7.3-apache
+    restart: always
+    depends_on:
+      - dbos
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_HOST: dbos
+      WORDPRESS_DB_USER: himanshu
+      WORDPRESS_DB_PASSWORD: qwertyuiop
+      WORDPRESS_DB_NAME: mydatabase
+    volumes:
+      - wp_storage:/var/www/html
+
+
+
+  adminer: 
+    image: adminer:latest
+    restart: always
+    depends_on:
+      - dbos  
+    ports:
+      - 7070:8080
+    environment:
+      ADMINER_DESIGN: nette
+      ADMINER_DEFAULT_SERVER: dbos
+
+     
+
+volumes:
+  mysql_db:
+  wp_storage:
