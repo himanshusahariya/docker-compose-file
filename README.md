@@ -10,6 +10,8 @@ Also if you want to run adminer, go to the web browser and search for "host_ip:7
 
 All the data will be automatically stored in the mysql volumes.
 
+To stop the containers run the command "docker-compose down".It will stop all the containers of compose file.
+
 For more information about containers visit:
 
 1. https://hub.docker.com/_/mysql
