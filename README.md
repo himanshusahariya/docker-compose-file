@@ -1,8 +1,9 @@
 # docker-compose-file
-
+## Description
 This file contains the code to compose three containers(mysql,wordpress,adminer).This contains WordPress , which is a free and open source blogging tool and a content management system (CMS) based on PHP and MySQL, which runs on a web hosting service. Mysql is also used to store data. MySQL is the world's most popular open source database.And last but not least, I have used adminer. Adminer (formerly phpMinAdmin) is a full-featured database management tool written in PHP.
 
 To run the code put the code in a seperate directory where no other compose file exists. Then to run code and ccccreate the containers go to the directory which contains the compose file and run the command "docker-compose up".You are all set to go now.
+![code1](https://user-images.githubusercontent.com/61407784/80939763-44df1600-8dfb-11ea-9880-6b2dac75cf70.png)
 
 Now if u want to run wordpress,go to the web browser and search for "host_ip:8080". It will forward you to the wordpress and now you are ready to go.
 
