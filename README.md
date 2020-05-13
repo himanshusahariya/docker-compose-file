@@ -5,8 +5,15 @@ This file contains the code to compose three containers(mysql,wordpress,adminer)
 ### Starting the compose containers
 
 #### Pre-requisites for starting docker-compose file:-
+
 1. You should have installed docker on your system.
 1. The httpd services of your system must be running.
+1. You shoud have the following images for docker downloaded in docker:
+    1. Mysql:5.7
+    1. Wordpress:5.1.1-php7.3-apache
+    1. Adminer:latest
+1. To download these images you can run the command **docker pull IMAGE_NAME**.
+1. You should have stable internet connection to communicate with containers with browser.
 
 #### Running the compose file containers:-
 1. To run the code put the code in a seperate directory where no other compose file exists. 
