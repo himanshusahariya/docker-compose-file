@@ -1,7 +1,11 @@
-# docker-compose-file
+# docker-compose file
 ## Description
 This file contains the code to compose three containers(mysql,wordpress,adminer).This contains **WordPress** , which is a free and open source blogging tool and a **content management system (CMS)** based on PHP and MySQL, which runs on a web hosting service. **Mysql** is also used to store data. MySQL is the world's most popular **open source database**.And last but not least, I have used **adminer**. Adminer (formerly phpMinAdmin) is a full-featured database management tool written in PHP.
-
+## Purpose of creating this compose file:
+Basically, In today's world, people like every work to be done easily. And simply this was the central idea for me to create this compose file. So, the question is why this file ? 
+    And, the answer is that by command line this is very hard and lengthy process to manage our database for the people who don't
+have the enough knowledge about databases. So, the answer for this problem is adminer, which provides graphical way to manipulate our databases. Thus making communication with databases easy for newbies.
+    I have used wordpress here to use the database and store the data here. Wordpress is a content management tool or blogging tool. So, whatever data is created there is stored in these databases. And here comes the use of Adminer. It here is used to manipulate the stored data, databases and tables etc.
 ### Starting the compose containers
 
 #### Pre-requisites for starting docker-compose file:-
