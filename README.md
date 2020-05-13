@@ -17,7 +17,7 @@ have the enough knowledge about databases. So, the answer for this problem is ad
     1. Wordpress:5.1.1-php7.3-apache
     1. Adminer:latest
 1. To download these images you can run the command **docker pull IMAGE_NAME**.
-1. You should have stable internet connection to communicate with containers with browser.
+1. You should have stable internet connection to communicate with containers using browser.
 
 #### Running the compose file containers:-
 1. To run the code put the code in a seperate directory where no other compose file exists. 
