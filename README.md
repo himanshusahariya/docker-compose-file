@@ -13,7 +13,14 @@ This file contains the code to compose three containers(mysql,wordpress,adminer)
 1. Then to run code and create the containers go to the directory which contains the compose file
 1. Run the command **"docker-compose up"**.
 
-##### You are all set to go now.
+##### You are all set to go now but before that use given info :
+1. Default user = **himanshu**
+1. Password for the default user = **qwertyuiop**  
+1. Root password = **qwertyuiop**
+1. Name of the database used = **mydatabase**
+1. Name of the Mysql container = **dbos**
+
+**Note :** *These environment variables can be altered by committing changes to the provided code.*
 
 ### How to access the containers:-
 1. If u want to open wordpress:
