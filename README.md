@@ -17,8 +17,8 @@ This file contains the code to compose three containers(mysql,wordpress,adminer)
 
 ### How to access the containers:-
 1. If u want to open wordpress:
-    1.Go to the web browser and search for **"host_ip:8080"** in search bar.
-    1.It will forward you to the wordpress and now you can use that wordpress container in whatever way you want.
+    1. Go to the web browser and search for **"host_ip:8080"** in search bar.
+    1. It will forward you to the wordpress and now you can use that wordpress container in whatever way you want.
 1. Also if you want to open adminer:
     1. Go to the web browser and search for **"host_ip:7070"** in search bar.
     1. It will forward you to the adminer webpage.
